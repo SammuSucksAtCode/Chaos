@@ -393,10 +393,10 @@ class TitleState extends MusicBeatState
 			case 0:
 				deleteCoolText();
 			case 1:
-				createCoolText(['RealLunatic' , 'Sammu' , 'KingArctic' , 'SanuvPacifist' , 'StreamRush']);
+				createCoolText(['Have you considered']);
 			// credTextShit.visible = true;
 			case 3:
-				addMoreText('Present');
+				addMoreText('Playing Charades');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
 			case 4:

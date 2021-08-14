@@ -182,7 +182,7 @@ class DownscrollOption extends Option
 
 	private override function updateDisplay():String
 	{
-		return FlxG.save.data.downscroll ? "Downscroll" : "Upscroll";
+		return FlxG.save.data.downscroll ? "Virgin Downscroll" : "Chad Upscroll";
 	}
 }
 
@@ -203,7 +203,7 @@ class GhostTapOption extends Option
 
 	private override function updateDisplay():String
 	{
-		return FlxG.save.data.ghost ? "Ghost Tapping" : "No Ghost Tapping";
+		return FlxG.save.data.ghost ? "Ghost Taps" : "No Ghost Taps";
 	}
 }
 

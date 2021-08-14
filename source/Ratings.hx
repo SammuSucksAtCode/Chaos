@@ -17,7 +17,7 @@ class Ratings
         else if (PlayState.misses < 10) // Single Digit Combo Breaks
             ranking = "(SDCB)";
         else
-            ranking = "(Clear)";
+            ranking = "(Succ)";
 
         // WIFE TIME :)))) (based on Wife3)
 

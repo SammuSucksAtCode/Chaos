@@ -456,7 +456,7 @@ class PlayState extends MusicBeatState
 		switch (songLowercase)
 		{
 			case 'tutorial':
-				dialogue = ["Hey you're pretty cute.", 'Use the arrow keys to keep up \nwith me singing.'];
+				dialogue = CoolUtil.coolTextFile(Paths.txt('data/tutorial/dialog'));
 			case 'bopeebo':
 				dialogue = [
 					'HEY!',
@@ -1295,6 +1295,8 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
+				case 'tutorial':
+					schoolIntro(doof);
 				default:
 					startCountdown();
 			}
@@ -2004,7 +2006,7 @@ class PlayState extends MusicBeatState
 		for (i in 0...4)
 		{
 			// FlxG.log.add(i);
-			var babyArrow:FlxSprite = new FlxSprite(0, strumLine.y);
+			var babyArrow:FlxSprite = new FlxSprite(34, strumLine.y);
 
 			// defaults if no noteStyle was found in chart
 			var noteTypeCheck:String = 'normal';
