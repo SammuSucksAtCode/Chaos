@@ -20,6 +20,8 @@ import Discord.DiscordClient;
 
 using StringTools;
 
+//Lmao I was changing this while in Scion session
+
 class StoryMenuState extends MusicBeatState
 {
 	var scoreText:FlxText;

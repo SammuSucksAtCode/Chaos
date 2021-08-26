@@ -381,6 +381,20 @@ class Character extends FlxSprite
 				loadOffsetFile(curCharacter);
 
 				playAnim('idle');
+
+			case 'lunatic':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('Lunatic1','shared',true);
+				frames = tex;
+				animation.addByPrefix('idle', 'lunatic idle dance', 24);
+				animation.addByPrefix('singUP', 'lunatic NOTE UP', 24);
+				animation.addByPrefix('singRIGHT', 'lunatic NOTE RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'lunatic NOTE DOWN', 24);
+				animation.addByPrefix('singLEFT', 'lunatic NOTE LEFT', 24);
+
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');	
 		}
 
 		dance();
